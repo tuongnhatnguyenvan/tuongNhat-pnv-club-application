@@ -76,7 +76,7 @@
 
 <body>
 
-    <form method="POST" action="post.php">
+    <form method="post" action="result.php">
         <div class="input-wrapper">
             <label for="userName">Name:</label>
             <input type="text" id="userName" name="userName">
@@ -92,11 +92,11 @@
         <div class="input-wrapper">
             <label>Be time for you:</label>
             <div class="inputRadio">
-                <input type="radio" id="timeSaturdayMorning" name="timeOfDay" value="timeSaturdayMorning">
+                <input type="radio" id="timeSaturdayMorning" name="timeOfDay" value="Saturday morning">
                 <label for="timeSaturdayMorning">Saturday mornings</label>
-                <input type="radio" id="timeSaturdayAfter" name="timeOfDay" value="timeSaturdayAfter">
+                <input type="radio" id="timeSaturdayAfter" name="timeOfDay" value="Saturday afternoon">
                 <label for="timeSaturdayAfter">Saturday afternoon</label><br>
-                <input type="radio" id="timeSunAfter" name="timeOfDay" value="timeSunAfter">
+                <input type="radio" id="timeSunAfter" name="timeOfDay" value="Sunday afternoon">
                 <label for="timeSunAfter">Sunday afternoon</label>
             </div>
         </div>
@@ -104,28 +104,28 @@
             <label>Your skills:</label>
             <div class="inputCheckbox">
                 <div>
-                    <input type="checkbox" id="skill1" name="skill1" value="Coder">
+                    <input type="checkbox" id="skill1" name="skills[]" value="The best coder">
                     <label for="skill1">The best coder</label><br>
-                    <input type="checkbox" id="skill2" name="skill2" value="Arts">
-                    <label for="skill2"> good in arts</label><br>
-                    <input type="checkbox" id="skill3" name="skill3" value="Star">
-                    <label for="skill3"> A supper star</label><br>
-                    <input type="checkbox" id="skill4" name="skill4" value="dancer">
+                    <input type="checkbox" id="skill2" name="skills[]" value="Good in arts">
+                    <label for="skill2">Good in arts</label><br>
+                    <input type="checkbox" id="skill3" name="skills[]" value="A super star">
+                    <label for="skill3">A super star</label><br>
+                    <input type="checkbox" id="skill4" name="skills[]" value="A crazy dancer">
                     <label for="skill4">A crazy dancer</label><br>
                 </div>
                 <div>
-                    <input type="checkbox" id="skill5" name="skill5" value="Singer">
+                    <input type="checkbox" id="skill5" name="skills[]" value="Singer">
                     <label for="skill5">Singer</label><br>
-                    <input type="checkbox" id="skill6" name="skill6" value="Design">
+                    <input type="checkbox" id="skill6" name="skills[]" value="Good in design">
                     <label for="skill6">Good in design</label><br>
-                    <input type="checkbox" id="skill7" name="skill7" value="Eater">
+                    <input type="checkbox" id="skill7" name="skills[]" value="The best eater">
                     <label for="skill7">The best eater</label><br>
-                    <input type="checkbox" id="skill8" name="skill8" value="Speeches">
-                    <label for="skill8">Good in Speeches</label><br>
+                    <input type="checkbox" id="skill8" name="skills[]" value="Good in speeches">
+                    <label for="skill8">Good in speeches</label><br>
                 </div>
             </div>
         </div>
-         <input class="send" type="submit" value="SUBMIT">
+        <input class="send" type="submit" value="SUBMIT">
     </form>
 </body>
 
